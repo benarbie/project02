@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">
+            Favorite Food Survey
+        </h1>
+        <p>
+            This is a short survey about your favorite food!
+        </p>
+    </header>
+    <form id="survey-form" action="somewhere">
+        <fieldset class="top">
+            <label id="name-label">Name:
+                <input id="name" type="text" placeholder="e.g Michael Jackson">
+            </label>
+            <label id="email-label">Email:
+                <input id="email" type="email" placeholder="e.g name@email.com">
+            </label>
+            <label id="number-label">Age:
+                <input id="number" type="number" min="13" max="99" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="e.g 25">
+            </label>   
+        </fieldset> 
+        
+        <fieldset class="middle">
+            <label for="dropdown">
+                Food Type:
+            </label>
+            <select name="dropdown" id="dropdown">
+                <option value="">
+                    (choose)
+                </option>
+                <option value="fast-food">
+                    Fast Food (Pizza, Hamburger and the like)
+                </option>
+                <option value="greens">
+                    Greens (Salads, Raw vegetables and the like)
+                </option>
+                <option value="homemade">
+                    Homemade (Anything that you make at home)
+                </option>
+                <option value="water">
+                    Water (Healthy option!)
+                </option>
+                <option value="nothing">
+                    Nothing (o_o creepy...)
+                </option>
+            </select>
+        </fieldset>
+        
+        <!-- Fill fieldset -->
+        <fieldset class="bottom1">
+            <legend class="meal-title">
+                Favorite Meal Time:
+            </legend>
+            <label for="breakfast">
+                <input type="radio" name="meal" id="breakfast"> Breakfast
+            </label>
+            <label for="lunch">
+                <input type="radio" name="meal" id="lunch"> Lunch
+            </label>
+            <label for="dinner">
+                <input type="radio" name="meal" id="dinner"> Dinner
+            </label>
+        </fieldset>
+        <!-- Fill fieldset -->
+        <fieldset class="bottom2">
+            <legend class="drink-title">
+                What drinks do you like?
+            </legend>
+            <div class="checkbox">
+                <input type="checkbox" name="drink" id="water"> 
+                <label for="water">Water</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="drink" id="coffee"> 
+                <label for="coffee">Coffee</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="drink" id="tea"> 
+                <label for="tea">Tea</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="drink" id="soda"> 
+                <label for="soda">Soda</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="drink" id="alcohol"> 
+                <label for="alcohol">Alcohol</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="drink" id="dish-soap"> 
+                <label for="dish-soap">Dish Soap?</label>
+            </div>
+
+
+        </fieldset>
+
+        <fieldset class="info">
+            <legend class="text-title">Any extra info?</legend>
+            <textarea name="extra-info" id="extra-info" rows="4" cols="50">
+            </textarea>
+        </fieldset>
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>

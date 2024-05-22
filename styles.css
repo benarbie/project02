@@ -1,0 +1,229 @@
+::placeholder {
+    opacity: 0.4;
+}
+
+
+body {
+    max-width: 500px;
+    margin: 50px auto;
+    background-image: url(image2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    white-space: nowrap;
+}
+/* Header Part */
+header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: aliceblue;
+}
+header p {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+}
+/* Body - Top */
+.top {
+    border: none;
+}
+.top > label {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    font-size: 26px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.top input {
+    font-size: 26px;
+    border-radius: 5px;
+    border-color: antiquewhite;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 2px 2px;
+    
+}
+form {
+    height: 900px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 100px 100px 20px 20px;
+    box-shadow: 5px 5px 5px 5px;
+    background: linear-gradient(rgb(245, 215, 175), rgb(245, 225, 199))
+}
+/* Body - Middle */
+.middle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    max-width: 450px;
+    margin-bottom: 40px;
+    border: none;
+}
+label[for='dropdown'] {
+    margin-bottom: 18px;
+}
+#dropdown {
+    height: 60px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px 5px 20px 5px;
+    border: none;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 2px 2px;
+    transition: 0.3s all;
+}
+/* Bottom 1 */
+.bottom1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+.meal-title {
+    margin: 0px auto;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 26px;
+}
+input[name='meal'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    transition: background-color 0.4s;
+}
+.bottom1 label {
+    font-weight: 600;
+}
+/* Bottom 2 */
+.bottom2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 100px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+.checkbox {
+    display: flex;
+    width: 25%;
+    margin-bottom: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+
+}
+.checkbox input {
+    display: none;
+}
+.drink-title {
+    margin: 0px auto;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 26px;
+}
+#tea {
+    margin-left: 19px;
+}
+/* Text Area */
+.info {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+textarea {
+    background-color: antiquewhite;
+    font-size: 20px;
+    height: 80px;
+    width: 300px;
+    box-shadow: 2px 2px 1px 1px;
+    border: none;
+    border-radius: 10px;
+}
+.text-title {
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    font-weight: 600;
+}
+/* Submit Button */
+button {
+    display: block;
+    margin: 30px auto;
+    height: 50px;
+    width: 130px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 7px;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 2px 2px;
+    transition: transform 0.1s;
+}
+/* Functions */
+
+/* Functions - Middle */
+#dropdown:hover {
+    background-color: rgb(143, 121, 102);
+    cursor: pointer;
+}
+/* Functions - Bottom 1 */
+input[name='meal']:checked {
+    background: linear-gradient(0deg, rgb(197, 127, 62) 50%, rgb(141, 132, 124));
+    border: 3px solid black;
+}
+input[name='meal']:hover {
+    cursor: pointer;
+}
+.bottom1 label:hover{
+    color: rgb(143, 121, 102);
+    cursor: pointer;
+    
+}
+/* Functions - Bottom 2 */
+.checkbox label:hover, .checkbox input:hover {
+    color: rgb(143, 121, 102);
+    cursor: pointer;
+}
+.checkbox input:checked + label {
+    background: linear-gradient(rgb(197, 127, 62) 50%, rgb(141, 132, 124));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.checkbox input:active + label {
+    color: antiquewhite;
+}
+/* Functions - Button */
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(253, 214, 180);
+    box-shadow: 2px 2px 2px 2px;
+}
+
